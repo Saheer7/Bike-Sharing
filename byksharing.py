@@ -10,7 +10,7 @@ def rmsle(y, y_):
     calc = (log1 - log2) ** 2
     return np.sqrt(np.mean(calc))
 
-data = pd.read_csv("D:\\My projects\\Bike Sharing\\Data sets\\train.csv")
+data = pd.read_csv("train.csv")
 
 print(data.head(3))
 
@@ -168,7 +168,7 @@ pylab.scatter(test_labels, estimator.predict(test_data), alpha=0.5, color = 'blu
 pylab.title('gbr model')
 pylab.show()
 
-real_test_data = pd.read_csv("D:\\My projects\\Bike Sharing\\Data sets\\test.csv")
+real_test_data = pd.read_csv("test.csv")
 real_test_data_ids = real_test_data["datetime"]
 print(real_test_data.head())
 

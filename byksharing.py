@@ -10,7 +10,7 @@ def rmsle(y, y_):
     calc = (log1 - log2) ** 2
     return np.sqrt(np.mean(calc))
 
-data = pd.read_csv("D:\\My projects\\Bike Sharing\\Data sets\\train.csv")
+data = pd.read_csv("train.csv")
 
 print(data.head(3))
 
